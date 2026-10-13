@@ -51,3 +51,4 @@ jobs:
             pytest-network.log
             quick-smoke.log
           if-no-files-found: ignore
+          retention-days: 2

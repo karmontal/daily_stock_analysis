@@ -125,6 +125,7 @@ jobs:
           name: desktop-windows-${{ env.RELEASE_TAG }}
           path: dist/release-assets/*
           if-no-files-found: error
+          retention-days: 2
 
   build-macos:
     strategy:
@@ -214,6 +215,7 @@ jobs:
           name: desktop-macos-${{ matrix.arch }}-${{ env.RELEASE_TAG }}
           path: dist/release-assets/*.dmg
           if-no-files-found: error
+          retention-days: 2
 
   publish-release:
     runs-on: ubuntu-latest
