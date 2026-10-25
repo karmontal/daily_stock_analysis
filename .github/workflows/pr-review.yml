@@ -141,6 +141,7 @@ jobs:
           name: ai-review-result
           path: ai_review_result.txt
           if-no-files-found: ignore
+          retention-days: 2
 
   # ==================== PR 标签自动分类（仅 GitHub API）====================
   labeler:
